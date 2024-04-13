@@ -1,0 +1,27 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title-container {
+  margin-top: 5rem
+}
+
+.title {
+  text-align: center;
+}
+
+.search-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.recipe-container {
+  width: 25%;
+  text-align: center;
+}

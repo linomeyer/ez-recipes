@@ -1,0 +1,65 @@
+{
+  "recipes": [
+    {
+      "title": "Ramen-Bowl",
+      "subtitle": "Simple Ramen-Bowl",
+      "persons": 4,
+      "imgUrl": "https://images.lecker.de/ramen-schuesseljpg,id=93efc402,b=lecker,w=1200,rm=sk.jpeg",
+      "groups": [
+        {
+          "title": "Fleisch",
+          "items": [
+            {
+              "amount": 500,
+              "unit-of-measure": "g",
+              "ingredient": "Hackfleisch"
+            },
+            {
+              "amount": 0.5,
+              "unit-of-measure": "TL",
+              "ingredient": "Salz"
+            }
+          ]
+        },
+        {
+          "title": "Suppe",
+          "items": [
+            {
+              "amount": 1,
+              "unit-of-measure": "Stück",
+              "ingredient": "Frische Chilli"
+            },
+            {
+              "amount": 5,
+              "unit-of-measure": "EL",
+              "ingredient": "Miso-Paste"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coq au Vin",
+      "subtitle": "Klassisches Rezept",
+      "persons": 4,
+      "imgUrl": "https://thomas-kocht.de/wp-content/uploads/2023/02/Coq_au_vin_rezept_thomas_kocht_recipe.jpg",
+      "groups": [
+        {
+          "title": "",
+          "items": [
+            {
+              "amount": 1,
+              "unit-of-measure": "Stück",
+              "ingredient": "Ganzes Poulet"
+            },
+            {
+              "amount": 1,
+              "unit-of-measure": "Liter",
+              "ingredient": "Rotwein"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
