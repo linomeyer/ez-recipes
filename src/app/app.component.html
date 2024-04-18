@@ -12,7 +12,7 @@
 </div>
 <div class="card-container">
   @for (recipe of recipes(); track recipe) {
-    <app-recipe (click)="showDetail()" [recipe]="recipe" class="recipe-container"></app-recipe>
+    <app-recipe [recipe]="recipe" class="recipe-container"></app-recipe>
   }
 </div>
 </body>

@@ -10,18 +10,19 @@ import {Recipe} from "./core/models/recipe";
 import {RecipeComponent} from "./recipe/recipe.component";
 import {ButtonModule} from "primeng/button";
 import {ChipsModule} from "primeng/chips";
+import {RecipeDetailComponent} from "./recipe-detail/recipe-detail.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatIcon, MatCard, MatCardTitle, MatFormField, MatInput, MatCardSubtitle, MatList, MatListItem, RecipeComponent, ButtonModule, ChipsModule],
+  imports: [RouterOutlet, MatIcon, MatCard, MatCardTitle, MatFormField, MatInput, MatCardSubtitle, MatList, MatListItem, RecipeComponent, ButtonModule, ChipsModule, RecipeDetailComponent],
   providers: [RecipeService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   private recipeService = inject(RecipeService);
-  recipes = signal<Recipe[] | undefined>(undefined)
+  recipes = signal<Recipe[] | undefined>(undefined);
   title = 'recipe-book';
 
   constructor() {
@@ -30,9 +31,5 @@ export class AppComponent {
         this.recipes.set(recipes);
       });
     });
-  }
-
-  showDetail() {
-
   }
 }

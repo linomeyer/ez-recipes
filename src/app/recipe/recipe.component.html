@@ -1,5 +1,10 @@
-<p-card [header]="recipe().title" [subheader]="recipe().subtitle" class="recipe-card">
+<p-card (click)="toggleShowDetail()" [header]="recipe().title" [subheader]="recipe().subtitle" class="recipe-card">
   <ng-template pTemplate="header" class="card-header">
     <img [src]="recipe().imgUrl" class="card-img" alt="card image">
   </ng-template>
 </p-card>
+
+
+@if (showDetail()) {
+  <app-recipe-detail [recipe]="recipe()"></app-recipe-detail>
+}
